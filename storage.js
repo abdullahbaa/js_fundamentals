@@ -15,8 +15,21 @@ const addToLocalStorage=() =>{
 
     value= JSON.stringify([value]);
 
-    const pen {
-        price=330,
-        brand ='gulugulu'
+    const pen ={
+        price:330,
+        brand :'gulugulu',
+        24: 'summer'
     }
-    localStorage.setItem('pen',JSON.stringify(pen))
+    localStorage.setItem('pen',JSON.stringify(pen));
+
+    // dot notaton
+
+    const dotNotation = pen.brand;
+
+    // braket Notation
+
+    const braketNotation = pen.['price'];
+    console.log(braketNotation);
+
+    const num = pen[24];
+    console.log(num);
